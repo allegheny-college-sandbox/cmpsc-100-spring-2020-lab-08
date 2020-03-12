@@ -31,6 +31,5 @@ writing:
 CountCommits --count 3
 ExecuteCommand --command "gradle build"
 ExecuteCommand --command "gradle -q --console runScenario"
-MatchCommandRegex --command "gradle -q --console runScenario" --regex "Alice recieves [0-3] year(s)." --count 1 --exact
-MatchCommandRegex --command "gradle -q --console runScenario" --regex "Bob recieves [0-3] years(s)." --count 1 --exact
-MatchCommandRegex --command "gradle -q --console runScenario" --regex "They live to catnap again!|Their sentences reformed them!" --count 1 --exact
+MatchCommandRegex --command "gradle -q --console runScenario" --regex "Alice recieves [0-3] year(s)" --count 1 --exact
+MatchCommandRegex --command "gradle -q --console runScenario" --regex "Bob recieves [0-3] years(s)" --count 1 --exact
