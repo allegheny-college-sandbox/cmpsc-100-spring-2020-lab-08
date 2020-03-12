@@ -81,7 +81,9 @@ Bob recieves 2 year(s).
 Their sentences reformed them!
 ```
 
-### A final note
+### Final notes
+
+The prompts `Does Alice defect [true/false]:` and `Does Bob defect [true/false]:` serve as prompts to let the user know that your program will expect input of either `true` or `false`.
 
 One additional ca(t)veat -- if either catnapper recieves _less that 2 years_, the final message should read: `There's at least one catnapper on the loose!` (as less than 2 years of jail time, as we know, cannot possbily reform a hardened catnapper).
 
