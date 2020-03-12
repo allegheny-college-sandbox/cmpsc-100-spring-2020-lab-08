@@ -56,8 +56,8 @@ public class CatnapCaper {
     }
     
     // Print sentences
-    System.out.println("Alice recieves " + aliceSentence + " year(s).");
-    System.out.println("Bob recieves " + bobSentence + " year(s).");
+    System.out.println("Alice receives " + aliceSentence + " year(s).");
+    System.out.println("Bob receives " + bobSentence + " year(s).");
     
     // Print summary status message
     if (aliceSentence < 2 || bobSentence < 2) {

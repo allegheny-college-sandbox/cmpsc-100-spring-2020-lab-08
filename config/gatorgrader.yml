@@ -36,4 +36,4 @@ MatchCommandRegex --command "gradle -q --console plain runScenario" --regex "Ali
 MatchCommandRegex --command "gradle -q --console plain runScenario" --regex "Bob defects!|Bob stays quiet." --count 1 --exact
 MatchCommandRegex --command "gradle -q --console plain runScenario" --regex "Alice\sreceives\s[0-3]\syear(s)." --count 1 --exact
 MatchCommandRegex --command "gradle -q --console plain runScenario" --regex "Bob\sreceives\s[0-3]\syear(s)." --count 1 --exact
-MatchCommandRegex --command "gradle -q --console plain runScenario" --regex "They live to catnap again!|Their sentences reformed them!" --count 1 --exact
+MatchCommandRegex --command "gradle -q --console plain runScenario" --regex "There's at least one catnapper on the loose!|Their sentences reformed them!" --count 1 --exact

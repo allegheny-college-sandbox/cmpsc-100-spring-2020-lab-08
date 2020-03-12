@@ -49,7 +49,21 @@ After consulting with G. Wiz to work out the possibilities, the detectives have 
 
 ![The truth will set you free](https://raw.githubusercontent.com/allegheny-college-sandbox/cmpsc-100-spring-2020-lab-08/media/media/g-wiz-crystal-ball-case-truth-table.png)
 
-It is up to you to write the code to simulate all of the various
+It is up to you to write a program to simulate all the various ways that their interrogation could go, and the corresponding outcomes.
+
+Overall, the output should look like the sample below (with some variation based on the `true`/`false` values input):
+
+```
+Does Alice defect [true/false]: Alice stays quiet.
+Does Bob defect [true/false]: Bob defects!
+
+Alice recieves 3 year(s).
+Bob recieves 0 year(s).
+
+There's at least one catnapper on the loose!
+
+BUILD SUCCESSFUL in 3s
+```
 
 ## Evaluation
 
