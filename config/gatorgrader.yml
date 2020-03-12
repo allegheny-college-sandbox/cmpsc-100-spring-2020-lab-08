@@ -9,7 +9,7 @@ src/main/java/labeight:
         ConfirmFileExists
         CountSingleLineComments --language Java --count 9
         MatchFileFragment --fragment "TODO" --count 0 --exact
-        MatchFileFragment --fragment "{Your Name Here} --count 0 --exact
+        MatchFileFragment --fragment "{Your Name Here}" --count 0 --exact
         MatchFileFragment --fragment "if" --count 6
         MatchFileFragment --fragment "&&" --count 3
         MatchFileFragment --fragment "||" --count 1
@@ -30,7 +30,7 @@ writing:
         
 CountCommits --count 3
 ExecuteCommand --command "gradle build"
-ExecuteCommand --command "gradle -q --console runScenario"
-MatchCommandRegex --command "gradle -q --console runScenario" --regex "Alice recieves [0-3] year(s)." --count 1 --exact
-MatchCommandRegex --command "gradle -q --console runScenario" --regex "Bob recieves [0-3] years(s)." --count 1 --exact
-MatchCommandRegex --command "gradle -q --console runScenario" --regex "They live to catnap again!|Their sentences reformed them!" --count 1 --exact
+ExecuteCommand --command "gradle -q --console plain runScenario"
+MatchCommandRegex --command "gradle -q --console plain runScenario" --regex "Alice recieves [0-3] year(s)." --count 1 --exact
+MatchCommandRegex --command "gradle -q --console plain runScenario" --regex "Bob recieves [0-3] years(s)." --count 1 --exact
+MatchCommandRegex --command "gradle -q --console plain runScenario" --regex "They live to catnap again!|Their sentences reformed them!" --count 1 --exact
