@@ -38,7 +38,7 @@ run {
 task runScenario (type: JavaExec, dependsOn: 'classes') {
   apply plugin: 'application'
   classpath = sourceSets.main.runtimeClasspath
-  main = 'activityten/CatnapCaper'
+  main = 'labeight/CatnapCaper'
   
   Random decider = new Random()
   int choice = decider.nextInt(4) + 1
