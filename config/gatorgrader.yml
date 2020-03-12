@@ -14,8 +14,9 @@ src/main/java/labeight:
         MatchFileFragment --fragment "&&" --count 3
         MatchFileFragment --fragment "||" --count 1
         MatchFileFragment --fragment ".nextBoolean()"  --count 2
-        MatchFileFragment --fragment "==" --count 2
+        MatchFileFragment --fragment "<" --count 2
         MatchFileFragment --fragment "boolean " --count 2
+        MatchFileRegex --regex "!=|![a-z]" --count 4
         
 
 writing:
@@ -31,6 +32,8 @@ writing:
 CountCommits --count 3
 ExecuteCommand --command "gradle build"
 ExecuteCommand --command "gradle -q --console plain runScenario"
-MatchCommandRegex --command "gradle -q --console plain runScenario" --regex "Alice recieves [0-3] year(s)." --count 1 --exact
-MatchCommandRegex --command "gradle -q --console plain runScenario" --regex "Bob recieves [0-3] years(s)." --count 1 --exact
+MatchCommandRegex --command "gradle -q --console plain runScenario" --regex "Alice defects!|Alice stays quiet." --count 1 --exact
+MatchCommandRegex --command "gradle -q --console plain runScenario" --regex "Bob defects!|Bob stays quiet." --count 1 --exact
+MatchCommandRegex --command "gradle -q --console plain runScenario" --regex "Alice\sreceives\s[0-3]\syear(s)." --count 1 --exact
+MatchCommandRegex --command "gradle -q --console plain runScenario" --regex "Bob\sreceives\s[0-3]\syear(s)." --count 1 --exact
 MatchCommandRegex --command "gradle -q --console plain runScenario" --regex "They live to catnap again!|Their sentences reformed them!" --count 1 --exact

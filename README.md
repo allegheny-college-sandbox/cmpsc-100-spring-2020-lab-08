@@ -41,7 +41,15 @@ I recommend reading the [GitHub Guides](https://guides.github.com) which GitHub 
 
 ## The Catnap Caper
 
+![G. Wiz, P.I.](https://raw.githubusercontent.com/allegheny-college-sandbox/cmpsc-100-spring-2020-lab-08/media/media/g-wiz-crystal-ball-case.png)
 
+Hearing about G. Wiz's crystal ball (somebody in class must've let their secret slip!), authorities of the global Animal Kingdom have called in our magical reptile friend to help predict all of the various scenarios that could occur once they begin interrogation of the two Human catnappers! Of course, there's some nice money in it for G. Wiz's hat collection.
+
+After consulting with G. Wiz to work out the possibilities, the detectives have narrowed down the following possibilities:
+
+![The truth will set you free](https://raw.githubusercontent.com/allegheny-college-sandbox/cmpsc-100-spring-2020-lab-08/media/media/g-wiz-crystal-ball-case-truth-table.png)
+
+It is up to you to write the code to simulate all of the various
 
 ## Evaluation
 
