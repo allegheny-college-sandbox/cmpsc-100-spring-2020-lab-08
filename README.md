@@ -104,7 +104,7 @@ If both catnappers recieve sentences _greater that two years_, then we know that
 - [ ] Contains no:
     * `TODO` markers
     * `{Your Name Here}` markers
-- [ ] Contains 350 words
+- [ ] Contains 300 words
 - [ ] Written in correct markup (passes `mdl`)
 - [ ] Responds to all questions
 

@@ -23,10 +23,10 @@ writing:
     reflection.md:
         ConfirmFileExists
         mdl --rules ~MD009,~MD012,~MD014,~MD013,~MD022,~MD026,~MD031
-        CountFileWords --count 350
-        CountFileParagraphs --count 7
+        CountFileWords --count 300
+        CountFileParagraphs --count 6
         MatchFileFragment --fragment "TODO" --count 0 --exact
-        CountMarkdownTags --tag "code_block" --count 4
+        CountMarkdownTags --tag "code_block" --count 5
         MatchFileFragment --fragment "{Your Name Here}" --count 0 --exact
         
 CountCommits --count 3
