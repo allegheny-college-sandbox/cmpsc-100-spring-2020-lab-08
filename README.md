@@ -51,24 +51,53 @@ After consulting with G. Wiz to work out the possibilities, the detectives have 
 
 It is up to you to write a program to simulate all the various ways that their interrogation could go, and the corresponding outcomes.
 
-Overall, the output should look like the sample below (with some variation based on the `true`/`false` values input):
+Overall, the output should look like the sample(s) below (with some variation based on the `true`/`false` values input).
+
+### Example 1
 
 ```
-Does Alice defect [true/false]: Alice stays quiet.
-Does Bob defect [true/false]: Bob defects!
+Does Alice defect [true/false]: false
+Alice stays quiet.
+Does Bob defect [true/false]: true
+Bob defects!
 
 Alice recieves 3 year(s).
 Bob recieves 0 year(s).
 
 There's at least one catnapper on the loose!
-
-BUILD SUCCESSFUL in 3s
 ```
+
+### Example 2
+
+```
+Does Alice defect [true/false]: true
+Alice defects!
+Does Bob defect [true/false]: true
+Bob defects!
+
+Alice recieves 2 year(s).
+Bob recieves 2 year(s).
+
+Their sentences reformed them!
+```
+
+### A final note
+
+One additional ca(t)veat -- if either catnapper recieves _less that 2 years_, the final message should read: `There's at least one catnapper on the loose!` (as less than 2 years of jail time, as we know, cannot possbily reform a hardened catnapper).
+
+If both catnappers recieve sentences _greater that two years_, then we know that our system of catching and reforming catnappers works! The final message should read `Their sentences reformed them!`.
 
 ## Evaluation
 
 ### `CatnapCaper.java`
 
+- [ ] Uses a `Scanner` to take input from the keyboard
+    * These inputs should be `boolean` values
+- [ ] Evaluates the `boolean` values to print whether a suspect defects or stays quiet.
+    * Each catnapper's decision should display as: `{NAME} defects!` or `{NAME} stays quiet`.
+    * This evaluation should take place using `if` statements
+- [ ] Uses `if` statements to evaluate the number of years assessed to a given catnapper based on how cooperative they were
+- [ ] Assesses if either catnapper recieved less than two years and print the appropriate status message, described above
 
 ### `reflection.md`
 

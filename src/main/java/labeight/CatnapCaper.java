@@ -61,7 +61,7 @@ public class CatnapCaper {
     
     // Print summary status message
     if (aliceSentence < 2 || bobSentence < 2) {
-      System.out.print("They live to catnap again!");
+      System.out.print("There's at least one catnapper on the loose!");
     } else {
       System.out.print("Their sentences reformed them!");
     }
